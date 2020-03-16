@@ -1,1 +1,4 @@
 unix_socket_connect(hal_audio_default, perfd, perfd)
+
+#============= hal_audio_default ==============
+allow hal_audio_default sysfs:dir { open read };

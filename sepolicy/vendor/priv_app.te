@@ -1,0 +1,3 @@
+#============= priv_app ==============
+allow priv_app proc_interrupts:file open;
+allow priv_app proc_modules:file { getattr open };
