@@ -8,3 +8,7 @@ allow hal_camera_default sysfs_healthd:dir search;
 
 get_prop(hal_camera_default, moto_boot_prop)
 set_prop(hal_camera_default, camera_prop)
+
+#============= hal_camera_default ==============
+allow hal_camera_default persist_file:dir getattr;
+allow hal_camera_default vendor_data_file:dir read;
